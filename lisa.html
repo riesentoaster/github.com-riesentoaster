@@ -10,18 +10,15 @@
     <script>
       function validateForm() {
         if (
-          document.forms["Form"]["knoten"].value.toUpperCase() ==
-            "EHIFGDJC" &&
+          document.forms["Form"]["knoten"].value.toUpperCase() == "EHIFGDJC" &&
           document.forms["Form"]["geheimschrift"].value.toLowerCase() ==
             "eciwhky" &&
           document.forms["Form"]["bibelsuchen"].value.toLowerCase() ==
             "aiisde" &&
-          document.forms["Form"]["feuer"].value.toLowerCase() ==
-            "feuer" &&
-            document.forms["Form"]["rechnen"].value ==
-            "340"
+          document.forms["Form"]["feuer"].value.toLowerCase() == "feuer" &&
+          document.forms["Form"]["rechnen"].value == "340"
         ) {
-          document.getElementById("loesung").innerHTML = "Lösung";
+          document.getElementById("loesung").innerHTML = "Gratuliere, du hast alle Rätsel geschafft! Dein Hasen versteckt sich bei diesen Koordinaten: 2'682'685, 1'280'078";
         } else {
           document.getElementById("loesung").innerHTML =
             "Leider stimmt noch nicht alles.";
@@ -34,15 +31,16 @@
       Lisas Oster-Rätsel
     </h1>
 
-    <h2 id="loesung"></h2>
     <p>Hallo Lisa</p>
     <p>
       Hier ist dein Osterrätsel. In dieser Box findest du alle deine Rätsel.
       Wenn du die Lösung gefunden hast, kannst du sie unten im Formular
-      eintragen. Wenn alles stimmt, taucht ganz oben der Standort deines Hasens
-      auf.
+      eintragen. Wenn alles stimmt, taucht unten am Formular der Standort deines
+      Hasens auf.
     </p>
-    <p>Such dir für jedes Rätsel einen schönen Ort, an dem du es lösen kannst.</p>
+    <p>
+      Such dir für jedes Rätsel einen schönen Ort, an dem du es lösen kannst.
+    </p>
     <form name="Form" onsubmit="return validateForm()">
       Rätsel 1: Knoten
       <input type="text" name="knoten" required /><br />
@@ -57,6 +55,7 @@
 
       <input type="submit" value="Überprüfen" />
     </form>
+    <h2 id="loesung"></h2>
 
     <h2>Anleitungen:</h2>
     <h3>Knoten</h3>
@@ -95,5 +94,11 @@
   </p>
   <h3>Rechnen</h3>
   <p>Die Lösung vom letzten Rätsel ist die Lösung von dieser Rechnung:</p>
-  <p>( ( Gründungsjahr des BESJ / Anzahl Tage in der Schöpfungsgeschichte + (2 x Länge eines PfiLas in Tagen) ) / Anzahl Saiten an einem Kontrabass / Ungefähre Luftliniendistanz zwischen Löhningen und Gächlingen in km (auf ganze Zahl gerundet) - Anzahl Ohren an einem normalen Hasen ) daraus der 2er-Logarithmus (muhaha) * Preis für eine B-Post-Briefmarke in Rappen</p>
+  <p>
+    ( ( Gründungsjahr des BESJ / Anzahl Tage in der Schöpfungsgeschichte + (2 x
+    Länge eines PfiLas in Tagen) ) / Anzahl Saiten an einem Kontrabass /
+    Ungefähre Luftliniendistanz zwischen Löhningen und Gächlingen in km (auf
+    ganze Zahl gerundet) - Anzahl Ohren an einem normalen Hasen ) daraus der
+    2er-Logarithmus (muhaha) * Preis für eine B-Post-Briefmarke in Rappen
+  </p>
 </html>
