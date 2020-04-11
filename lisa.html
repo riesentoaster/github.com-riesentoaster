@@ -1,0 +1,44 @@
+<!doctype html>
+
+<html lang="de">
+
+<head>
+  <meta charset="utf-8">
+  <title>Lisas Rätsel</title>
+</head>
+
+<body>
+  <script>
+    function validateForm() {
+    var x = document.forms["Form"]["01"].value;
+    if (x == "") {
+        alert("Name must be filled out");
+    } else if (x == "123") {
+      document.getElementById("loesung").innerHTML = "Lösung"
+    }
+    }
+  </script>
+
+
+<h1>
+  Lisas Oster-Rätsel
+</h1>
+
+<h2 id="loesung"></h2>
+<p>Hallo Lisa</p>
+<p>Hier ist dein Osterrätsel. In dieser Box findest du alle deine Rätsel. Wenn du die Lösung gefunden hast, kannst du sie unten im Formular eintragen. Wenn alles stimmt, taucht ganz oben der Standort deines Hasens auf.</p>
+  <form name="Form" onsubmit="validateForm()">
+
+
+  Rätsel 1: Knoten <input type="text" name="01" required>
+
+
+
+
+  <input type="submit" value="Überprüfen">
+  </form>
+
+
+
+</body>
+</html>
